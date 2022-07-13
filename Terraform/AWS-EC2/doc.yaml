@@ -1,0 +1,4 @@
+Amazon Machine Image: "ami-00bf5f1c358708486"
+vpc_id: "vpc-047614d229dd528ac"
+instance_type: "t2.micro"
+subnet_id: "subnet-067eb098cc58ab0a1"

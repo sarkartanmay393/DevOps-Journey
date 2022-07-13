@@ -1,0 +1,7 @@
+There are 3 mode in vim editor.
+1. Command Mode (default).
+2. Insert Mode (pressing 'I')
+3. Extended Command Mode
+Hi everybody, I am learning Vim editor in terminal 
+ of Ubuntu Server in Docker container.
+

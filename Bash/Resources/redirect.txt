@@ -1,0 +1,18 @@
+Name: Tanmay, YearsOld: 19, Height: 5.7
+Name: Rahul, YearsOld: 21, Height: 5.9
+Name: Amit, YearsOld: 22, Height: 5.7
+Name: Godol, YearsOld: 17, Height: 5.7
+Name: Bishnu, YearsOld: 19, Height: 5.5
+Name: Priyangshu, YearsOld: 21, Height: 5.6
+Name: Dibyendu, YearsOld: 20, Height: 5.7
+Name: Sagar, YearsOld: 22, Height: 5.7
+
+Names -
+Tanmay 
+Rahul 
+Amit 
+Godol
+Bishnu
+Priyangshu
+Dibyendu
+Sagar

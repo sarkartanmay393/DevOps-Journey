@@ -1,0 +1,52 @@
+Linux is case-sensitive. We should remember it all the time.
+
+Hi There, I am making a shortcut of a Path in Linux.
+
+Man:
+Grep used for pattern matching.
+Cut used for filtering.
+Awk used for intellegent filtering.
+Sed used for Search and Replace in files.
+Find used for searching files.
+| Piping operator.
+Locate used for search in database.
+Pmap used for Memory map of process.
+Tar used for Archive and Compression.
+
+
+Commands: 
+grep root /etc/passwd - Searches root in specific file.
+grep -i root /etc/passwd - Does exact same, ignoring case sensitivity.
+grep -v root /etc/passwd - Displays everything except root.
+grep -R root /etc/* - Checks in everyfile and directories for root.
+
+cut -d: -f1 /etc/passwd - Prints all before first : of each line.
+
+awk -F":" '{print$1}' /etc/passwd - Does exact same as cut, improved cut pkg
+
+:%s/searchfor/replacewith -  in Vim editor to Search and Replace.
+
+sed 's/Name/name/g' info.txt - Searches for Name to Replace with name.
+sed -i 's/Name/name/g' info.txt - to also save the changes in file.
+
+echo "Hello" > greet.txt - Replace everything with "Hello" in greet file.
+echo "Settings" >> greet.txt - Appends new at the end.
+cat cmd > cmdcopy.txt - Prints output in cmdcopy.txt.
+ls /bin | grep -i Bash - Outputs bash named file. It's called Piping.
+
+find /Doc/ -name text.txt - Finds text.txt in Doc directory.
+
+updatedb - For updating the locate database.
+locate host - Outputs host named files.
+
+useradd tanmay - Creates a new user called Tanmay
+userdel tanmay - Deletes user.
+usermod - Used for user modification.
+
+chown -R tanmay names.txt - Owner of names.txt changes to tanmay.
+chown -R tanmay:randomgroup names.txt - Changes ownership and group also.
+
+chmod ugo+wrx uptime.sh - Changes w,r and executable permission of uptime.sh of user group other with + operator to grant, - for deny, = for set.
+
+
+
