@@ -11,10 +11,18 @@ provider "aws" {
   region = "us-east-1"
 }
 
+resource "aws_default_vpc" "default-vpc" {
+
+}
+
+resource "aws_default_subnet" "default-subnet" {
+  availability_zone = "us-east-1a"
+}
+
 # creating a security group
 resource "aws_security_group" "http-server-sg" {
   name   = "http-server-sg"
-  vpc_id = "vpc-047614d229dd528ac"
+  vpc_id = aws_default_vpc.default-vpc.id
   ingress { # incoming traffic ingress
     from_port   = 80
     to_port     = 80
@@ -49,7 +57,7 @@ resource "aws_instance" "http-server" {
   instance_type          = "t2.micro"
   key_name               = "demo-pair"
   vpc_security_group_ids = [aws_security_group.http-server-sg.id]
-  subnet_id              = "subnet-067eb098cc58ab0a1"
+  subnet_id              = aws_default_subnet.default-subnet.id
 
   connection {
     type        = "ssh"
