@@ -6,6 +6,6 @@
 
 #### Connect with Me
 
-<https://twitter.com/sarkartanmay393>
-<https://linkedin.com/in/tanmaysarkar>
-<https://tanmaysarkar.tech>
+<https://twitter.com/sarkartanmay393> </br>
+<https://linkedin.com/in/tanmaysarkar> </br>
+<https://tanmaysarkar.tech> </br>
