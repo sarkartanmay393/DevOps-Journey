@@ -15,9 +15,7 @@ resource "aws_default_vpc" "default-vpc" {
 
 }
 
-resource "aws_default_subnet" "default-subnet" {
-  availability_zone = "us-east-1a"
-}
+
 
 # creating a security group
 resource "aws_security_group" "http-server-sg" {
@@ -48,16 +46,15 @@ resource "aws_security_group" "http-server-sg" {
 }
 
 variable "http-server-key-pair" {
-  default = "~/Documents/PrivateXD/demo-pair.pem"
 }
 
 # creating a amazon linux instance.
 resource "aws_instance" "http-server" {
-  ami                    = "ami-0cff7528ff583bf9a"
+  ami                    = "ami-0cff7528ff583bf9a" #data.aws_ami.amazon_linux_ami.id
   instance_type          = "t2.micro"
   key_name               = "demo-pair"
   vpc_security_group_ids = [aws_security_group.http-server-sg.id]
-  subnet_id              = aws_default_subnet.default-subnet.id
+  subnet_id              = data.aws_subnets.default-subnets.ids[0]
 
   connection {
     type        = "ssh"

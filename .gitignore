@@ -1,11 +1,10 @@
 .terraform
-.tfstate
-.tfstate.backup
-.terraform/
+terraform.tfstate
+terraform.tfstate.backup
 .terraform.lock.hcl
-
+.terraform/
 .DS_Store
-
 devops-master-class/
 linux-docker/
 Golang/
+.terraform.tfstate.lock.info
